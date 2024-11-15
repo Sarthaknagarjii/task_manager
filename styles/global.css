@@ -1,0 +1,122 @@
+:root {
+  --background: #f9f9f9; /* Soft off-white */
+  --foreground: #2c3e50; /* Dark slate gray text */
+  --primary: #f0d7f5; /* Light primary color */
+  --secondary: #ff6f61; /* Bright coral */
+  --shadow: rgba(0, 0, 0, 0.1); /* Shadow color */
+  --border-radius: 12px; /* Rounded corners */
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5); /* White overlay with transparency */
+  z-index: -1; /* Send it behind other content */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  box-shadow: 0 4px 8px var(--shadow);
+  border-radius: var(--border-radius);
+}
+
+nav .MuiButton-root {
+  color: white; /* White text for buttons */
+  transition: background-color 0.3s ease;
+  border-radius: var(--border-radius);
+  padding: 10px 20px; /* Add padding for better touch targets */
+}
+
+nav .MuiButton-root:hover {
+  background-color: var(--secondary); /* Bright coral on hover */
+  box-shadow: 0 4px 12px var(--shadow); /* Add shadow on hover */
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px var(--shadow);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.MuiAppBar-root {
+  background-color: var(--primary); /* Use your primary color */
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.54); /* Darker placeholder color */
+  opacity: 1; /* Ensures the opacity is set to 1 for better visibility */
+}
+
+.MuiInputBase-input::placeholder {
+  color: rgba(0, 0, 0, 0.54); /* Darker placeholder color */
+  opacity: 1; /* Ensures the opacity is set to 1 for better visibility */
+}
+
+.MuiButton-root {
+  border-radius: 4px; /* Slightly round the corners */
+  padding: 10px 20px; /* Add padding for better touch targets */
+}
+
+.MuiButton-root:hover {
+  background-color: var(--secondary); /* Change to secondary color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}

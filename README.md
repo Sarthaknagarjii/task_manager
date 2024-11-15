@@ -1,40 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Task Management Application
+This project is a Task Management Application built with React and Material-UI. It allows users to add, edit, delete, search, and sort tasks efficiently. The application is responsive and provides an easy-to-use interface for managing tasks with various priorities and due dates.
 
-## Getting Started
+#Table of Contents
+Features
+Setup and Launch
+Assumptions
+Tech Stack
+License
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Features:
+Add Tasks: Create new tasks with a title, description, priority, and due date.
+Edit Tasks: Update existing tasks to adjust details.
+Delete Tasks: Remove tasks permanently.
+Search Functionality: Locate tasks by title using the search bar in the navbar.
+Sort Functionality: Sort tasks by priority or due date for better task management.
+Toggle Completion: Mark tasks as completed or pending.
+Local Storage: Task data is stored in the browser's local storage, so tasks are saved between sessions.
+Responsive Design: Built to be responsive, the application adjusts to various screen sizes for seamless use on mobile, tablet, and desktop devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#Setup and Launch
+To run this application locally, follow the steps below:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Clone the Repository
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+bash
+git clone https://github.com/your-username/task-management-app.git
+cd task-management-app
+Install Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+bash
+npm install
+Run the Application
 
-## Learn More
+bash
+npm start
+The application will open in your default browser at http://localhost:3000.
+Build the Application
 
-To learn more about Next.js, take a look at the following resources:
+To create a production-ready build, run:
+bash
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Assumptions
 
-## Deploy on Vercel
+Task Sorting Options: The application assumes only two sorting options are required: by priority and by due date. Priority sorting is managed based on three levels (High, Medium, Low), and due dates are sorted in chronological order.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Single Page Application: Assumes a simple, single-page application for ease of navigation and faster loading.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Local Storage Only: Data persistence is limited to the browser's local storage. There is no backend API or external database for storing tasks, so data will not be shared across different devices or browsers.
+
+Limited Priority Options: Tasks can have a priority of High, Medium, or Low. Custom priorities are not supported.
+
+Basic Completion Status: Tasks can be marked as complete or incomplete, without additional status options.
+
+#Tech Stack
+Frontend: React, Material-UI
+State Management: React Hooks (useState, useEffect)
+Data Storage: Local Storage (browser-based)
+Styling: CSS-in-JS with Material-UI components and styles
+
+
+# License
+This project is open-source and available under the MIT License.

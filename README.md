@@ -1,7 +1,7 @@
 # Task Management Application
 This project is a Task Management Application built with React and Material-UI. It allows users to add, edit, delete, search, and sort tasks efficiently. The application is responsive and provides an easy-to-use interface for managing tasks with various priorities and due dates.
 
-#Table of Contents
+# Table of Contents
 Features
 Setup and Launch
 Assumptions
@@ -20,7 +20,7 @@ Local Storage: Task data is stored in the browser's local storage, so tasks are 
 Responsive Design: Built to be responsive, the application adjusts to various screen sizes for seamless use on mobile, tablet, and desktop devices.
 
 
-#Setup and Launch
+# Setup and Launch
 To run this application locally, follow the steps below:
 
 Clone the Repository
@@ -56,7 +56,7 @@ Limited Priority Options: Tasks can have a priority of High, Medium, or Low. Cus
 
 Basic Completion Status: Tasks can be marked as complete or incomplete, without additional status options.
 
-#Tech Stack
+# Tech Stack
 Frontend: React, Material-UI
 State Management: React Hooks (useState, useEffect)
 Data Storage: Local Storage (browser-based)
